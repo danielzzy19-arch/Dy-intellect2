@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Physics Hub</title>
+    <link rel="stylesheet" href="physics.css">
+        <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+  <nav> <a href="index.html">Home</a>
+        <a href="chemistry.html">chemistry</a>
+         <a href="maths.html">maths</a>
+          <a href="biology.html">biology</a>
+  </nav>
+
+<header>
+    <h1>⚡ Advanced Physics Hub</h1>
+    <p>Learn Physics with Videos, PDFs & Interactive Tools</p>
+    <script src="physics.js"></script>
+</header>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <aside>
+        <h2>Topics</h2>
+        <ul>
+            <li onclick="loadTopic('mechanics')">Mechanics</li>
+            <li onclick="loadTopic('waves')">Waves</li>
+            <li onclick="loadTopic('electricity')">Electricity</li>
+            <li onclick="loadTopic('modern')">Modern Physics</li>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- VIDEO SECTION -->
+        <section class="box">
+            <h2>🎥 Video Lesson</h2>
+            <iframe id="videoFrame"
+                width="100%" height="300"
+                src="https://www.youtube.com/embed/DK5Z709J2eo"
+                allowfullscreen>
+            </iframe>
+        </section>
+
+        <!-- PDF SECTION -->
+        <section class="box">
+            <h2>📄 Physics PDF Notes</h2>
+            <p>Download or view your study materials below:</p>
+
+            <a href="physics-notes.pdf" target="_blank" class="btn">View PDF</a>
+            <a href="physics-notes.pdf" download class="btn">Download PDF</a>
+        </section>
+
+        <!-- CALCULATOR -->
+        <section class="box">
+            <h2>⚡ Force Calculator (F = m × a)</h2>
+
+            <input type="number" id="mass" placeholder="Mass (kg)">
+            <input type="number" id="acceleration" placeholder="Acceleration (m/s²)">
+            <button onclick="calculateForce()">Calculate</button>
+
+            <h3 id="result">Result: ---</h3>
+        </section>
+
+        <!-- QUIZ -->
+        <section class="box">
+          <section class="box">
+    <h2>🎯 Quick Quiz</h2>
+    <p>What is the SI unit of Force?</p>
+
+    <button onclick="alert('Correct Answer: Newton (N)')">Newton</button>
+    <button onclick="alert('Wrong Answer')">Joule</button>
+    <button onclick="alert('Wrong Answer')">Watt</button>
+</section>
+            <h2>🎯 Quick Quiz</h2>
+            <p>What is the SI unit of Force

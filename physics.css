@@ -1,0 +1,130 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BACKGROUND (modern science feel) */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #eaf6ff;
+    min-height: 100vh;
+    background: url("images/physics-bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* DARK BLUE OVERLAY */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(circle at top, rgba(0, 170, 255, 0.25), rgba(0, 0, 0, 0.92));
+    z-index: -1;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0, 180, 255, 0.3);
+}
+
+header h1 {
+    font-size: 40px;
+    text-shadow: 0 0 15px rgba(0, 180, 255, 0.6);
+}
+
+header p {
+    opacity: 0.85;
+    margin-top: 8px;
+}
+
+/* MAIN LAYOUT */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* SIDEBAR */
+aside {
+    width: 250px;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(12px);
+    padding: 20px;
+    border-right: 1px solid rgba(0, 180, 255, 0.3);
+}
+
+aside h2 {
+    margin-bottom: 15px;
+    color: #00d4ff;
+}
+
+/* SIDEBAR LIST */
+aside ul {
+    list-style: none;
+}
+
+aside li {
+    padding: 12px;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid rgba(0, 180, 255, 0.15);
+}
+
+aside li:hover {
+    background: rgba(0, 200, 255, 0.2);
+    transform: translateX(5px);
+    box-shadow: 0 0 15px rgba(0, 200, 255, 0.3);
+}
+
+/* MAIN CONTENT */
+main {
+    flex: 1;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* BOXES (GLASS CARDS) */
+.box {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(0, 180, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    transition: 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 200, 255, 0.5);
+}
+
+/* VIDEO */
+iframe {
+    border-radius: 12px;
+    border: 1px solid rgba(0, 180, 255, 0.3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+/* INPUT FIELDS */
+input {
+    width: 100%;
+    padding: 10px
+    aside li {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+aside li:hover {
+    background: rgba(0, 200, 255, 0.2);
+    transform: translateX(8px);
+}
